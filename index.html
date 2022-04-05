@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- links -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/6191e4057d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+  <title>Quiz</title>
+</head>
+<!-- start of body -->
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark text-center">
+    <div class="container-fluid">
+      <h1>Juice Wrld Fan Quiz</h1>
+    </div>
+    <h1 id="scoreText"></h1>
+  </nav>
+  <!-- end of nav -->
+  <div class="container">
+    <!-- intro card -->
+    <div id="introCard" class="intro-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Welcome to the Quiz
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">How well do you know Juice Wrld?</h5>
+          <p class="card-text">in this quiz you will be tested on you knowledge as a fan 999</p>
+          <button type="button" class="btn btn-outline-primary" onclick="btnStart()">Primary</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of intro card -->
+
+    <!-- first question card -->
+    <div id="firstQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          First Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">what was Juice wrlds first hit song?</h5>
+          <p class="card-text">what song put juice wrld into the mainstream spotlight</p>
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q1A1" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+              value="Lean with me">
+            Lean with me
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q1A2" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+              value="Lucid dreams">
+            Lucid dreams
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q1A3" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+              value="all girls are the same">
+            all girls are the same
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q1A4" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
+              value="wishing well">
+            wishing well
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q1A5" type="radio" name="flexRadioDefault" id="flexRadioDefault5"
+              value="End of the road">
+            End of the road
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA1()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of first question card -->
+
+    <!-- second question card -->
+    <div id="secondQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Second Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">what song is juice wrlds biggest</h5>
+          <p class="card-text">what song is his biggest song as of 2022?</p>
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q2A1" type="radio" name="flexRadioDefault2" id="flexRadioDefault1"
+              value="Cigarettes">
+            Cigarettes
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q2A2" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"
+              value="Wasted">
+            Wasted
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q2A3" type="radio" name="flexRadioDefault2" id="flexRadioDefault3"
+              value="Come & Go">
+            Come & Go
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q2A4" type="radio" name="flexRadioDefault2" id="flexRadioDefault4"
+              value="wishing well">
+            wishing well
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q2A5" type="radio" name="flexRadioDefault2" id="flexRadioDefault5"
+              value="Lucid dreams">
+            Lucid dreams
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA2()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of second question card -->
+
+    <!-- Third question card -->
+    <div id="thirdQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Third Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">whats Juice Wrlds Name</h5>
+          <p class="card-text">what is juice wrlds legal birth name?</p>
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q3A1" type="radio" name="flexRadioDefault3" id="flexRadioDefault1"
+              value="Chris Baston">
+            Chris Baston
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q3A2" type="radio" name="flexRadioDefault3" id="flexRadioDefault2"
+              value="Jarad Higgins">
+            Jarad Higgins
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q3A3" type="radio" name="flexRadioDefault3" id="flexRadioDefault3"
+              value="Symere Woods">
+            Symere Woods
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q3A4" type="radio" name="flexRadioDefault3" id="flexRadioDefault4"
+              value="Bashar Jackson">
+            Bashar Jackson
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q3A5" type="radio" name="flexRadioDefault3" id="flexRadioDefault5"
+              value="Jahseh Onfroy">
+            Jahseh Onfroy
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA3()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of Third question card -->
+
+    <!-- Forth question card -->
+    <div id="forthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Forth Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">what was the name of juice wrlds first album?</h5>
+          <!-- <p class="card-text"></p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q4A1" type="radio" name="flexRadioDefault4" id="flexRadioDefault1"
+              value="Death Race for Love">
+            Death Race for Love
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q4A2" type="radio" name="flexRadioDefault4" id="flexRadioDefaul2"
+              value="Wrld on Drugs">
+            Wrld on Drugs
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q4A3" type="radio" name="flexRadioDefault4" id="flexRadioDefault3"
+              value="Fighting Demons">
+            Fighting Demons
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q4A4" type="radio" name="flexRadioDefault4" id="flexRadioDefault4"
+              value="Goodbye & Good Riddance">
+            Goodbye & Good Riddance
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q4A5" type="radio" name="flexRadioDefault4" id="flexRadioDefault5"
+              value="Legends Never Die">
+            Legends Never Die
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA4()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of Forth question card -->
+    <!-- fifth question card -->
+    <div id="fifthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Fifth Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">How old was Juice Wrld when he died?</h5>
+          <!-- <p class="card-text"></p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q5A1" type="radio" name="flexRadioDefault5" id="flexRadioDefault1"
+              value="21 years">
+            21 years
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q5A2" type="radio" name="flexRadioDefault5" id="flexRadioDefaul2"
+              value="18 Years">
+            18 years
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q5A3" type="radio" name="flexRadioDefault5" id="flexRadioDefault3"
+              value="19 years">
+            19 years
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q5A4" type="radio" name="flexRadioDefault5" id="flexRadioDefault4"
+              value="24 years">
+            24 years
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q5A5" type="radio" name="flexRadioDefault5" id="flexRadioDefault5"
+              value="25 years">
+            25 years
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA5()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of fifth question card -->
+
+    <!-- sixth question card -->
+    <div id="sixthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Sixth Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What was Juice Wrlds latest girlfriend's name?</h5>
+          <!-- <p class="card-text">what song put juice wrld into the mainstream spotlight</p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q6A1" type="radio" name="flexRadioDefault6" id="flexRadioDefault1"
+              value="Geneva Ayala">
+            Geneva Ayala
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q6A2" type="radio" name="flexRadioDefault6" id="flexRadioDefault2"
+              value="Rachel Wattley">
+            Rachel Wattley
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q6A3" type="radio" name="flexRadioDefault6" id="flexRadioDefault3"
+              value="Ally Lotti">
+            Ally Lotti
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q6A4" type="radio" name="flexRadioDefault6" id="flexRadioDefault4"
+              value="Brittany Byrd">
+            Brittany Byrd
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q6A5" type="radio" name="flexRadioDefault6" id="flexRadioDefault5"
+              value="Amber Rose">
+            Amber Rose
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA6()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of sixth question card -->
+
+    <!-- seventh question card -->
+    <div id="seventhQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Seventh Question / Ten
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What year did Juice Wrld die?</h5>
+          <!-- <p class="card-text">what song is his biggest song as of 2022?</p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q7A1" type="radio" name="flexRadioDefault7" id="flexRadioDefault1"
+              value="2015">
+            2015
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q7A2" type="radio" name="flexRadioDefault7" id="flexRadioDefault2"
+              value="2016">
+            2016
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q7A3" type="radio" name="flexRadioDefault7" id="flexRadioDefault3"
+              value="2017">
+            2017
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q7A4" type="radio" name="flexRadioDefault7" id="flexRadioDefault4"
+              value="2018">
+            2018
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q7A5" type="radio" name="flexRadioDefault7" id="flexRadioDefault5"
+              value="2019">
+            2019
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA7()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of seventh question card -->
+
+    <!-- eighth question card -->
+    <div id="eighthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Eighth Question / Ten (HARD)
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What was Juice Wrlds first music video?</h5>
+          <!-- <p class="card-text">what is juice wrlds legal birth name?</p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q8A1" type="radio" name="flexRadioDefault8" id="flexRadioDefault1"
+              value="Lucid dreams">
+            Lucid dreams
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q8A2" type="radio" name="flexRadioDefault8" id="flexRadioDefault2"
+              value="AYE AYEEE">
+            AYE AYEEE
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q8A3" type="radio" name="flexRadioDefault8" id="flexRadioDefault3"
+              value="All girls are the same">
+            All girls are the same
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q8A4" type="radio" name="flexRadioDefault8" id="flexRadioDefault4"
+              value="Robbery">
+            Robbery
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q8A5" type="radio" name="flexRadioDefault8" id="flexRadioDefault5"
+              value="Conversations">
+            Conversations
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA8()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of Eighth question card -->
+
+    <!-- ninth question card -->
+    <div id="ninthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Ninth Question / Ten (HARD)
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What year did Juice Wrld release his first song?</h5>
+          <!-- <p class="card-text"></p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q9A1" type="radio" name="flexRadioDefault9" id="flexRadioDefault1"
+              value="2011">
+            2011
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q9A2" type="radio" name="flexRadioDefault9" id="flexRadioDefaul2"
+              value="2012">
+            2012
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q9A3" type="radio" name="flexRadioDefault9" id="flexRadioDefault3"
+              value="2013">
+            2013
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q9A4" type="radio" name="flexRadioDefault9" id="flexRadioDefault4"
+              value="2014">
+            2014
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q9A5" type="radio" name="flexRadioDefault9" id="flexRadioDefault5"
+              value="2015">
+            2015
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA9()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of ninth question card -->
+    <!-- Tenth question card -->
+    <div id="tenthQuestion" style="display: none;" class="first-question-card">
+      <div class="card bg-dark">
+        <div class="card-header">
+          Tenth Question / Ten (HARD)
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Which of these songs is NOT from Legends never die?</h5>
+          <!-- <p class="card-text"></p> -->
+        </div>
+        <div class="list-group">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q10A1" type="radio" name="flexRadioDefault10"
+              id="flexRadioDefault1" value="Anxiety">
+            Anxiety
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q10A2" type="radio" name="flexRadioDefault10" id="flexRadioDefaul2"
+              value="Titanic">
+            Titanic
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q10A3" type="radio" name="flexRadioDefault10"
+              id="flexRadioDefault3" value="Maze">
+            Maze
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q10A4" type="radio" name="flexRadioDefault10"
+              id="flexRadioDefault4" value="Bad Energy">
+            Bad Energy
+          </label>
+          <label class="list-group-item">
+            <input class="form-check-input me-1" id="Q10A5" type="radio" name="flexRadioDefault10"
+              id="flexRadioDefault5" value="Conversations">
+            Conversations
+          </label>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="SubmitA10()">Submit Answer</button>
+      </div>
+    </div>
+    <!-- end of Tenth question card -->
+    <!-- results card -->
+    <div style="display: none;" id="resultsCard" class="intro-card">
+      <div class="card bg-dark">
+        <!-- final text -->
+        <div class="card-header">
+          Final Card
+        </div>
+        <div class="card-body">
+          <h4 id="exitText" class="card-title"> </h4>
+          <h5 id="scoreBord"></h5>
+          <ul id="ansList" class="list-group">
+            <li id="liAns1" class="list-group-item">All Girls Are The Same</li>
+            <li id="liAns2" class="list-group-item">Lucid Dreams</li>
+            <li id="liAns3" class="list-group-item">Jarad Higgins </li>
+            <li id="liAns4" class="list-group-item">Goodbye & Good Riddance</li>
+            <li id="liAns5" class="list-group-item">21 Years</li>
+            <li id="liAns6" class="list-group-item">Ally Lotti</li>
+            <li id="liAns7" class="list-group-item">2019</li>
+            <li id="liAns8" class="list-group-item">AYE AYEEE</li>
+            <li id="liAns9" class="list-group-item">2014</li>
+            <li id="liAns10" class="list-group-item">Maze</li>
+          </ul>
+          <!-- <button type="button" class="btn btn-outline-primary" onclick="btnStart()">Primary</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- end of results card -->
+    <!-- end of container -->
+  </div>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="/bootstrap-5.0.2/dist/js/bootstrap.min.js">
+  <script src="scripts.js"></script>
+</body>
+
+</html>

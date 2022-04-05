@@ -1,0 +1,40 @@
+body {
+  background-image: url("wp5140772-juice-wrld-desktop-wallpapers.jpg");
+  background-size: cover;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  color: white !important;
+}
+
+#introCard {
+  margin-top: 10px;
+  padding-right: 20px;
+  width: 55%;
+  color: white;
+}
+
+.first-question-card {
+  margin-top: 10px;
+  padding-right: 20px;
+  width: 55%;
+  color: white;
+}
+
+li.list-group-item {
+  background-color: black !important;
+}
+
+#resultsCard {
+  margin-top: 10px;
+  padding-right: 20px;
+  width: 55%;
+  color: white;
+}
+
+#ansList li {
+  color: white !important;
+  background-color: #343a40 !important;
+}
+/*# sourceMappingURL=style.css.map */
